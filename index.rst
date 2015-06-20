@@ -1,6 +1,11 @@
+.. image:: _static/img/fakerino_logo.png 
+   :align: left
+
 Welcome to Fakerino's documentation!
 ==================================================
-
+|
+|
+|
 What is Fakerino?
 ----------------
 
@@ -39,5 +44,4 @@ Contents:
    outputs-format
    support
    contribute
-
 

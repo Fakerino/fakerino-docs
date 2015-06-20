@@ -17,3 +17,4 @@ To fake more than one data in same time, an array must be passed to the fake met
 .. code-block:: php
 
     echo $falerino->fake(array('NameMale', 'Surname'));
+

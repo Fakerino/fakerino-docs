@@ -19,3 +19,4 @@ Json
 .. code-block:: php
 
     $fakerino->fake('Surname')->toJson();
+

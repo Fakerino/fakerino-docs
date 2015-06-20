@@ -47,3 +47,4 @@ It's possible to override every parameters using a configuration file.
         'MaleName'
         'Surname'
     ));
+

@@ -180,6 +180,7 @@ html_static_path = ['_static']
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'FakerinoDoc'
 
+html_copy_source = False
 
 # -- Options for LaTeX output --------------------------------------------------
 
@@ -261,5 +262,5 @@ html_context = {
     'github_user': 'fakerino',
     'github_repo': 'fakerino-docs',
     'github_version': 'master',
-    'source_suffix': 'rst',
+    'source_suffix': '.rst',
 }

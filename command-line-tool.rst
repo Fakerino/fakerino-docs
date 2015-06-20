@@ -29,3 +29,4 @@ Examples:
     app/fake surname -l de-DE //Schleßinger   
     app/fake -t tableName -c  path/config.xml  
     app/fake -s 'Hello Mrs {{namefemale}} {{surname}}' -l de-DE //Hello Mrs Seeliger Ceylin
+
