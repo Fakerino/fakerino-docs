@@ -1,0 +1,309 @@
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Define fake data groups &mdash; Fakerino Documentation 0.1 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Fakerino Documentation 0.1 documentation" href="index.html"/>
+        <link rel="next" title="Advanced Configuration" href="advanced-configuration.html"/>
+        <link rel="prev" title="Functionalities" href="functionalities.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        
+
+        
+          <a href="index.html" class="icon icon-home"> Fakerino Documentation
+        
+
+        
+        </a>
+
+        
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+          
+          
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#inside-your-project-folder">Inside your project folder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#like-a-stand-alone-project">Like a stand-alone project</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="installation.html#open-data-sample-project">Open Data Sample Project</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="quick-start.html">Quick start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="available-fake-data.html">Available Fake Data</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="available-fake-data.html#framework-core-data">Framework core data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="available-fake-data.html#ods-data">ODS data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="available-fake-data.html#regular-expression">Regular expression</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="functionalities.html">Functionalities</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="functionalities.html#loop">Loop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functionalities.html#fake-table">Fake table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functionalities.html#fake-template">Fake template</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functionalities.html#fake-entity">Fake entity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functionalities.html#regular-expression">Regular expression</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functionalities.html#seed">Seed</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Define fake data groups</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#php-configuration-example">Php configuration example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#examples-of-supported-configurations">Examples of supported configurations</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#yaml">Yaml</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xml">Xml</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ini">Ini</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="advanced-configuration.html">Advanced Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="command-line-tool.html">Command line tool</a></li>
+<li class="toctree-l1"><a class="reference internal" href="outputs-format.html">Outputs format</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="outputs-format.html#string">String</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outputs-format.html#array">Array</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outputs-format.html#json">Json</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="support.html">Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html">Contribute</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="contribute.html#contribute-to-fakerino-code">Contribute to Fakerino code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contribute.html#contribute-to-fakerino-data">Contribute to Fakerino data</a></li>
+</ul>
+</li>
+</ul>
+
+          
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">Fakerino Documentation</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Define fake data groups</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="https://github.com/fakerino/fakerino-docs/blob/master/define-fake-data-groupsrst" class="fa fa-github"> Edit on GitHub</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="define-fake-data-groups">
+<h1>Define fake data groups<a class="headerlink" href="#define-fake-data-groups" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>With a configuration file you could use all the power of Fakerino and fake more complex object in one shot instead of call several times the same functions.</p>
+<p>The default configuration tag (could be modified in the <a class="reference internal" href="advanced-configuration.html"><em>Advanced configuration</em></a>) Fakerino uses to recognize a custom fake element is:</p>
+<blockquote>
+<div><cite>fake</cite></div></blockquote>
+<dl class="docutils">
+<dt>This implies that:</dt>
+<dd><ul class="first last simple">
+<li>Every complex elements has to be under the main <strong>fake</strong> configuration tag</li>
+<li>Each element&#8217;s name must start with the <strong>fake</strong> tag name (ex: fake1, fake2, ..)</li>
+</ul>
+</dd>
+</dl>
+<p>Below an example of configuration in Php:</p>
+</div>
+<div class="section" id="php-configuration-example">
+<h2>Php configuration example<a class="headerlink" href="#php-configuration-example" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-php"><div class="highlight"><pre><span class="c1">//conf.php</span>
+<span class="o">&lt;?</span><span class="nx">php</span>
+<span class="nv">$conf</span><span class="p">[</span><span class="s1">&#39;fake&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
+    <span class="s1">&#39;fake1&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span>
+        <span class="s1">&#39;NameMale&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;Surname&#39;</span>
+    <span class="p">),</span>
+    <span class="s1">&#39;fake2&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span>
+        <span class="s1">&#39;NameFemale&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;Surname&#39;</span>
+    <span class="p">)</span>
+<span class="p">);</span>
+</pre></div>
+</div>
+<p>The configuration file can be injected with:</p>
+<div class="highlight-php"><div class="highlight"><pre><span class="nv">$fakerino</span> <span class="o">=</span> <span class="nx">Fakerino</span><span class="o">::</span><span class="na">create</span><span class="p">(</span><span class="s1">&#39;filepath/conf.php&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>Using the above configuration you could fake the whole fake1 structure or only the second one as below.</p>
+<div class="highlight-php"><div class="highlight"><pre><span class="k">echo</span> <span class="nv">$fakerino</span><span class="o">-&gt;</span><span class="na">fake</span><span class="p">(</span><span class="s1">&#39;fake1&#39;</span><span class="p">);</span>
+<span class="k">echo</span> <span class="nv">$fakerino</span><span class="o">-&gt;</span><span class="na">fake</span><span class="p">(</span><span class="s1">&#39;fake2&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>You could also continue to use the basic fake calls everytime (<cite>$fakerino-&gt;fake(&#8216;Name&#8217;);</cite>).</p>
+</div>
+<div class="section" id="examples-of-supported-configurations">
+<h2>Examples of supported configurations<a class="headerlink" href="#examples-of-supported-configurations" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="yaml">
+<h3>Yaml<a class="headerlink" href="#yaml" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-text"><div class="highlight"><pre>fake:
+  fakeMale:
+   - titlemale
+   - surname
+</pre></div>
+</div>
+</div>
+<div class="section" id="xml">
+<h3>Xml<a class="headerlink" href="#xml" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-text"><div class="highlight"><pre>&lt;?xml version=&quot;1.0&quot;?&gt;
+&lt;fake&gt;
+    &lt;fake1&gt;
+        &lt;NameFemale/&gt;
+        &lt;Surname/&gt;
+    &lt;/fake1&gt;
+&lt;/fake&gt;
+</pre></div>
+</div>
+</div>
+<div class="section" id="ini">
+<h3>Ini<a class="headerlink" href="#ini" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-text"><div class="highlight"><pre>[fake]
+fake1[]=NameFemale
+fake1[]=Surname
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="advanced-configuration.html" class="btn btn-neutral float-right" title="Advanced Configuration" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="functionalities.html" class="btn btn-neutral" title="Functionalities" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Nicola Pietroluongo.
+    </p>
+  </div>
+  .
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'',
+            VERSION:'0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

@@ -1,0 +1,346 @@
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Functionalities &mdash; Fakerino Documentation 0.1 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Fakerino Documentation 0.1 documentation" href="index.html"/>
+        <link rel="next" title="Define fake data groups" href="define-fake-data-groups.html"/>
+        <link rel="prev" title="Available Fake Data" href="available-fake-data.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        
+
+        
+          <a href="index.html" class="icon icon-home"> Fakerino Documentation
+        
+
+        
+        </a>
+
+        
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+          
+          
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#inside-your-project-folder">Inside your project folder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#like-a-stand-alone-project">Like a stand-alone project</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="installation.html#open-data-sample-project">Open Data Sample Project</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="quick-start.html">Quick start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="available-fake-data.html">Available Fake Data</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="available-fake-data.html#framework-core-data">Framework core data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="available-fake-data.html#ods-data">ODS data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="available-fake-data.html#regular-expression">Regular expression</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Functionalities</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#loop">Loop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#fake-table">Fake table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#fake-template">Fake template</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#fake-entity">Fake entity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#regular-expression">Regular expression</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#seed">Seed</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="define-fake-data-groups.html">Define fake data groups</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define-fake-data-groups.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="define-fake-data-groups.html#php-configuration-example">Php configuration example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="define-fake-data-groups.html#examples-of-supported-configurations">Examples of supported configurations</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="define-fake-data-groups.html#yaml">Yaml</a></li>
+<li class="toctree-l3"><a class="reference internal" href="define-fake-data-groups.html#xml">Xml</a></li>
+<li class="toctree-l3"><a class="reference internal" href="define-fake-data-groups.html#ini">Ini</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="advanced-configuration.html">Advanced Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="command-line-tool.html">Command line tool</a></li>
+<li class="toctree-l1"><a class="reference internal" href="outputs-format.html">Outputs format</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="outputs-format.html#string">String</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outputs-format.html#array">Array</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outputs-format.html#json">Json</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="support.html">Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html">Contribute</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="contribute.html#contribute-to-fakerino-code">Contribute to Fakerino code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contribute.html#contribute-to-fakerino-data">Contribute to Fakerino data</a></li>
+</ul>
+</li>
+</ul>
+
+          
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">Fakerino Documentation</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Functionalities</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="https://github.com/fakerino/fakerino-docs/blob/master/functionalitiesrst" class="fa fa-github"> Edit on GitHub</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="functionalities">
+<h1>Functionalities<a class="headerlink" href="#functionalities" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><ul class="simple">
+<li><a class="reference internal" href="#loop"><em>Loop</em></a> generates N number of fake data.</li>
+<li><a class="reference internal" href="#fake-table"><em>Fake table</em></a> sets fake data inside a given Entity/Object.</li>
+<li><a class="reference internal" href="#fake-template"><em>Fake template</em></a> returns fake data inside a given template source.</li>
+<li><a class="reference internal" href="#fake-entity"><em>Fake entity</em></a> sets fake data inside a given Entity/Object.</li>
+<li><a class="reference internal" href="#regular-expression"><em>Regular expression</em></a> support</li>
+<li><a class="reference internal" href="#seed"><em>Seed</em></a> sets a fixed seed number for having on each call the same data.</li>
+</ul>
+</div></blockquote>
+<div class="section" id="loop">
+<span id="id1"></span><h2>Loop<a class="headerlink" href="#loop" title="Permalink to this headline">¶</a></h2>
+<p>The loop, allows to generate multiple fake data in one line of code.</p>
+<div class="highlight-php"><div class="highlight"><pre><span class="nv">$fakerino</span><span class="o">-&gt;</span><span class="na">fake</span><span class="p">(</span><span class="s1">&#39;Name&#39;</span><span class="p">)</span><span class="o">-&gt;</span><span class="na">num</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>The num() method is also available for <a class="reference internal" href="advanced-configuration.html"><em>complex fake data</em></a> and fakeTable.</p>
+</div>
+<div class="section" id="fake-table">
+<span id="id2"></span><h2>Fake table<a class="headerlink" href="#fake-table" title="Permalink to this headline">¶</a></h2>
+<p>The fakeTable method supports Mysql, Sqlite, PostgresSQL, Oracle, Microsoft SQL.
+<tt class="docutils literal"><span class="pre">PHP</span> <span class="pre">$fakerino-&gt;num(100)-&gt;fakeTable('tableName');</span></tt></p>
+<p>The database connection must be set trough configuration&#8217;s values.</p>
+<div class="highlight-php"><div class="highlight"><pre><span class="c1">//mysql example</span>
+<span class="nv">$conf</span><span class="p">[</span><span class="s1">&#39;database&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
+    <span class="s1">&#39;dbname&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;mydb&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;user&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;user&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;password&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;secret&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;host&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;localhost&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;driver&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;pdo_mysql&#39;</span><span class="p">,</span>
+<span class="p">);</span>
+
+<span class="c1">//sqlite example</span>
+<span class="nv">$conf</span><span class="p">[</span><span class="s1">&#39;database&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
+    <span class="s1">&#39;path&#39;</span> <span class="o">=&gt;</span> <span class="nx">__DIR__</span> <span class="o">.</span> <span class="s1">&#39;/mytable.sqlite&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;driver&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;pdo_sqlite&#39;</span>
+<span class="p">);</span>
+</pre></div>
+</div>
+<p>For further database configuration please read the <a class="reference external" href="http://doctrine-dbal.readthedocs.org/en/latest/reference/configuration.html">Doctrine Dbal configuration</a>.</p>
+</div>
+<div class="section" id="fake-template">
+<span id="id3"></span><h2>Fake template<a class="headerlink" href="#fake-template" title="Permalink to this headline">¶</a></h2>
+<p>Providing a [Twig](<a class="reference external" href="http://twig.sensiolabs.org/">http://twig.sensiolabs.org/</a>) template, Fakerino can render the template with fake data inside.
+the fakeTemplate method accept both file or string.</p>
+<p>Inline template:</p>
+<div class="highlight-php"><div class="highlight"><pre><span class="c1">//string</span>
+<span class="nv">$fakerino</span><span class="o">-&gt;</span><span class="na">fakeTemplate</span><span class="p">(</span><span class="s1">&#39;Hello Mr {{ surname }}&#39;</span><span class="p">);</span>
+<span class="c1">//output: Hello Mr Brown</span>
+</pre></div>
+</div>
+<p>Loading external template file:</p>
+<div class="highlight-php"><div class="highlight"><pre><span class="c1">//file.php</span>
+<span class="nv">$fakerino</span><span class="o">-&gt;</span><span class="na">fakeTemplate</span><span class="p">(</span><span class="s1">&#39;template/path/response.xml&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+<div class="highlight-php"><div class="highlight"><pre><span class="c1">//response.xml</span>
+<span class="o">&lt;?</span><span class="nx">xml</span> <span class="nx">version</span><span class="o">=</span><span class="s2">&quot;1.0&quot;</span> <span class="nx">encoding</span><span class="o">=</span><span class="s2">&quot;UTF-8&quot;</span> <span class="nx">standalone</span><span class="o">=</span><span class="s2">&quot;yes&quot;</span><span class="cp">?&gt;</span><span class="x"></span>
+<span class="x">&lt;response&gt;</span>
+<span class="x">  &lt;person&gt;</span>
+<span class="x">     &lt;name&gt;{{ namemale }}&lt;/name&gt;</span>
+<span class="x">     &lt;surname&gt;{{ surname }}&lt;/surname&gt;</span>
+<span class="x">  &lt;/person&gt;</span>
+<span class="x">&lt;/response&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="fake-entity">
+<span id="id4"></span><h2>Fake entity<a class="headerlink" href="#fake-entity" title="Permalink to this headline">¶</a></h2>
+<p>The fake entity method, receive an Entity class in input and insert fake in every public properties and non public properties exposed by a public method setter.</p>
+<div class="highlight-php"><div class="highlight"><pre><span class="nv">$myEntity</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">MyEntity</span><span class="p">();</span>
+<span class="nv">$fakerino</span><span class="o">-&gt;</span><span class="na">fakeEntity</span><span class="p">(</span><span class="nv">$myEntity</span><span class="p">);</span>
+
+<span class="c1">//entity example</span>
+<span class="k">class</span> <span class="nc">MyEntity</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="nv">$one</span><span class="p">;</span>
+    <span class="k">private</span> <span class="nv">$two</span><span class="p">;</span>
+    <span class="k">static</span> <span class="k">public</span> <span class="nv">$four</span><span class="p">;</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">setTwo</span><span class="p">(</span><span class="nv">$two</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">two</span> <span class="o">=</span> <span class="nv">$two</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p><strong>Note</strong> The pubblic setter name must start with &#8216;set&#8217; (example: setMyVar)</p>
+</div>
+<div class="section" id="regular-expression">
+<span id="id5"></span><h2>Regular expression<a class="headerlink" href="#regular-expression" title="Permalink to this headline">¶</a></h2>
+<p>To fake a regular expression just call the fake method with the expression value.</p>
+<p>Example: <tt class="docutils literal"><span class="pre">$fakerino-&gt;fake('/\d{10}/');</span></tt></p>
+<p>Ouput: 0483791034</p>
+<p>The regular expression could be used combined with configuration values.
+Example:</p>
+<div class="highlight-php"><div class="highlight"><pre><span class="nv">$arrayConfig</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;surname&#39;</span><span class="p">,</span> <span class="s1">&#39;threeCharText&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;/\w{3}/&#39;</span><span class="p">);</span>
+<span class="nv">$fakerino</span><span class="o">-&gt;</span><span class="na">fake</span><span class="p">(</span><span class="nv">$arrayConfig</span><span class="p">);</span>
+<span class="c1">//result:</span>
+<span class="c1">//Brown</span>
+<span class="c1">//abc</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="seed">
+<span id="id6"></span><h2>Seed<a class="headerlink" href="#seed" title="Permalink to this headline">¶</a></h2>
+<p>If the seed is defined for each program run, you will receive the same fake data.</p>
+<div class="highlight-php"><div class="highlight"><pre><span class="nv">$fakerino</span><span class="o">-&gt;</span><span class="na">seed</span><span class="p">(</span><span class="mi">123</span><span class="p">);</span>
+<span class="nv">$fakerino</span><span class="o">-&gt;</span><span class="na">fake</span><span class="p">(</span><span class="s1">&#39;surname&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="define-fake-data-groups.html" class="btn btn-neutral float-right" title="Define fake data groups" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="available-fake-data.html" class="btn btn-neutral" title="Available Fake Data" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Nicola Pietroluongo.
+    </p>
+  </div>
+  .
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'',
+            VERSION:'0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
