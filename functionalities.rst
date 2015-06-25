@@ -25,6 +25,7 @@ The num() method is also available for :doc:`complex fake data </advanced-config
 Fake table
 ^^^^^^^^^^
 The fakeTable method supports Mysql, Sqlite, PostgresSQL, Oracle, Microsoft SQL.  
+
 .. code-block:: php 
 
     $fakerino->num(100)->fakeTable('tableName');

@@ -40,7 +40,7 @@ It's possible to override every parameters using a configuration file.
 
     $conf['mycustom'] = array(
     'mycustom-one' => array(
-        'FemaleName'
+        'NameFemale'
         'Surname'
     ),
     'mycustom-two' => array(

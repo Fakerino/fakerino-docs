@@ -8,7 +8,7 @@ Quick start
 .. code-block:: php
 
     require('../Fakerino/vendor/autoload.php'); //path to the Fakerino folder
-    use Fakerino/Fakerino
+    use Fakerino\Fakerino
     $fakerino = Fakerino::create();
     echo $falerino->fake('NameMale'); //shows a fake name
 
